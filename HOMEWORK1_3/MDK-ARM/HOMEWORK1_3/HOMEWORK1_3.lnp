@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+"homework1_3\startup_stm32f103xb.o"
+"homework1_3\main.o"
+"homework1_3\stm32f1xx_it.o"
+"homework1_3\stm32f1xx_hal_msp.o"
+"homework1_3\stm32f1xx_hal_gpio_ex.o"
+"homework1_3\stm32f1xx_hal.o"
+"homework1_3\stm32f1xx_hal_rcc.o"
+"homework1_3\stm32f1xx_hal_rcc_ex.o"
+"homework1_3\stm32f1xx_hal_gpio.o"
+"homework1_3\stm32f1xx_hal_dma.o"
+"homework1_3\stm32f1xx_hal_cortex.o"
+"homework1_3\stm32f1xx_hal_pwr.o"
+"homework1_3\stm32f1xx_hal_flash.o"
+"homework1_3\stm32f1xx_hal_flash_ex.o"
+"homework1_3\stm32f1xx_hal_exti.o"
+"homework1_3\system_stm32f1xx.o"
+--strict --scatter "HOMEWORK1_3\HOMEWORK1_3.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "HOMEWORK1_3.map" -o HOMEWORK1_3\HOMEWORK1_3.axf
