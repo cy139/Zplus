@@ -116,7 +116,7 @@ HAL_TIM_Base_Start_IT(&htim3);//启动定时器3中断
     {
       if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == GPIO_PIN_SET)//按键松开
       {
-        butten_est = 0;//按键状态为松开
+        
         butten_time = lunxun1ms - butten_time;//计算按键按下的时间
         if (butten_time >= 20)
         {
